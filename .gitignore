@@ -11,3 +11,4 @@ dist/
 #Miscellaneous
 .DS_Store
 /.angular/cache
+*.swp
