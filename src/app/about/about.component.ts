@@ -20,7 +20,7 @@ export class AboutComponent {
   //Ejecución de la petición y suscripción de la respuesta
   ngOnInit() {
     this.dataProvider.getResponse().subscribe((response) => { 
-      this.data = (response as Moviedata[]); 
+      this.data = (response as Moviedata[]).slice(0,2); //uso slice para traer 2 datos, si quiero todos dejo sin slice
     })
   }
 }
