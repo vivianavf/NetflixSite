@@ -17,5 +17,15 @@ describe('FooterComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+
   });
+
+
+  it('nav element', ()=> {
+    const headerElement: HTMLElement = fixture.nativeElement;
+    const nav = headerElement.querySelector('footer')!;
+    expect(nav).toBeTruthy();
+  })
+
+
 });
